@@ -1,23 +1,21 @@
 .grid {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-direction: column;
 	width: 100%;
 	height: 100%;
-	margin: 0 auto;
-	list-style: none;
-	text-align: center;
+	/*text-align: center;*/
+	justify-content: center;
 }
 
 /* Common style */
 .grid figure {
-	/*float: left;*/
-	/*overflow: hidden;*/
-	/*margin: 15px;	/*change here for spacing*/*/
+	display: flex;
+	flex-direction: row;
 	height: 100%;
 	width: 100%;
+	min-width: 100%;
 	text-align: center;
-	cursor: pointer;
+	margin: 2.0em 0;
 }
 
 /*.grid figure img {
@@ -42,7 +40,15 @@
 
 .grid figure figcaption,
 .grid figure figcaption > a {
-	/*position: absolute;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+}
+
+.grid figure figcaption > a {
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -612,7 +618,7 @@ figure.effect-oscar figcaption {
 	transition: background-color 0.35s;*/
 }
 
-figure.effect-oscar figcaption::before {
+img.effect-oscar figcaption::before {
 	position: absolute;
 	top: 30px;
 	right: 30px;
@@ -622,7 +628,7 @@ figure.effect-oscar figcaption::before {
 	content: '';
 }
 
-figure.effect-oscar h2 {
+img.effect-oscar h2 {
 	margin: 0;
 	line-height: 1em;
 	-webkit-transition: -webkit-transform 0.35s;
@@ -636,8 +642,7 @@ figure.effect-oscar h2 {
   font-size: 200%;
 }
 
-figure.effect-oscar figcaption::before,
-figure.effect-oscar p {
+img.effect-oscar figcaption::before {
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
@@ -645,24 +650,24 @@ figure.effect-oscar p {
 	transform: scale(0);
 }
 
-figure.effect-oscar:hover h2 {
+img.effect-oscar:hover h2 {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
   color: white;
 }
 
-figure.effect-oscar:hover figcaption::before,
-figure.effect-oscar:hover p {
+img.effect-oscar:hover figcaption::before,
+img.effect-oscar:hover p {
 	opacity: .8;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
 
-figure.effect-oscar:hover figcaption {
+img.effect-oscar:hover figcaption {
 	background-color: rgba(0,0,0,0.8);
 }
 
-figure.effect-oscar:hover img {
+img.effect-oscar:hover {
 	opacity: 0.4;
 }
 
