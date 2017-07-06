@@ -56,7 +56,7 @@ p{font-size:1.25em;line-height: 1.7em; margin-bottom: 1.7em;}
 /*banner*/
 .backgroundPhoto {width: 100%; height: 900px; object-fit: cover;}
 .banner{height: 100%; width: 100%;}
-.banner .caption{position: absolute;top: 0;left:0; right: 0; bottom: 0;background:rgba(0,0,0,0.5); height: 100%; width: 100%;}
+.banner .caption{position: absolute;top: 0;left:0; right: 0; bottom: 0;background:rgba(0,0,0,0.5); height: 900px; width: 100%;}
 .banner .caption-wrapper{display: table;height: inherit;width: 100%;}
 .banner .caption-info{display: table-cell;vertical-align: middle;text-align: center;color: #fff;}
 .banner .caption-info h1{font:normal 6.0em Josefin Sans,Arial,Helvetica;text-transform:capitalize;}
